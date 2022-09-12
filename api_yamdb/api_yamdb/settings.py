@@ -10,12 +10,11 @@ print(os.environ)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-SECRET_KEY =  os.getenv('SECRET_KEY')
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
-
 
 
 INSTALLED_APPS = [
@@ -64,7 +63,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'api_yamdb.wsgi.application'
 
 
-
 DATABASES = {
     'default': {
         'ENGINE': os.getenv('DB_ENGINE', default='django.db.backends.postgresql'),
@@ -75,7 +73,6 @@ DATABASES = {
         'PORT': os.getenv('DB_PORT', default='5432')
     }
 }
-
 
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -94,7 +91,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-
 LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'Europe/Moscow'
@@ -104,8 +100,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
-
 
 
 STATIC_URL = '/static/'
