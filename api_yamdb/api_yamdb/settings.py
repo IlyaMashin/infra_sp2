@@ -5,7 +5,7 @@ from datetime import timedelta
 from dotenv import load_dotenv
 
 load_dotenv()
-print(os.environ)
+
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
